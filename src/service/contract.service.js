@@ -317,7 +317,7 @@ class ContractService {
         [sequelize.literal('Contract.clientId'), 'clientId'],
         [sequelize.fn('SUM', sequelize.col('price')), 'totalPayment'],
       ],
-      // group: ['Contract.clientId'],
+      group: ['Contract.clientId'],
       include: [
         {
           model: Contract,
@@ -329,8 +329,8 @@ class ContractService {
     });
 
     return clientsPayments.map((clientPayment) => ({
-      clientId: clientPayment.dataValues.clientId,
-      totalPayment: clientPayment.dataValues.totalPayment,
+      id: clientPayment.dataValues.clientId,
+      paid: clientPayment.dataValues.totalPayment,
     }));
   }
 }
