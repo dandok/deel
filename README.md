@@ -97,9 +97,11 @@ When you have finished the assignment, zip your repo (make sure to include .git 
 
 Thank you and good luck! 🙏
 
-## WHat was done
+## What was done
 1. 6 new API's were created 
 2. 1 API was corrected
-2. A few tests written
-3. A postman collection created fro documentation purposes
+
+   Extras
+3. A few tests written
+4. A postman collection created from documentation purposes
 https://documenter.getpostman.com/view/16882651/2sA3XJnRNz
